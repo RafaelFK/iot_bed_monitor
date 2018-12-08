@@ -33,12 +33,12 @@ void loop() {
     HTTPClient http;
 
     Serial.print("[HTTP] begin...\n");
-    http.begin("http://rkatopodis.pythonanywhere.com/"); //HTTP
+    http.begin("http://rkatopodis.pythonanywhere.com/report"); //HTTP
     http.addHeader("Content-Type", "application/json");
     Serial.print("[HTTP] POST...\n");
     
     // start connection and send HTTP header
-    int httpCode = http.POST("{\"name\": \"Rafael\"}");
+    int httpCode = http.POST("{\"value\": \"127\"}");
 
     // httpCode will be negative on error
     if (httpCode > 0) {
