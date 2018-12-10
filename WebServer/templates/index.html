@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
         <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
-        <link rel="stylesheet" href={{ url_for('static', 'css/tabs.css' )}}>
+        <link rel="stylesheet" href={{ url_for('static', filename='css/tabs.css' )}}>
     </head>
     <body>
         <nav class="navbar is-info">
@@ -235,7 +235,7 @@
             </div>
         </div>
     </section>
-    <script src={{ url_for('static', 'js/bulma.js') }}></script>
-    <script src={{ url_for('static', 'js/tabs.js') }}></script>
+    <script src={{ url_for('static', filename='js/bulma.js') }}></script>
+    <script src={{ url_for('static', filename='js/tabs.js') }}></script>
 </body>
 </html>
